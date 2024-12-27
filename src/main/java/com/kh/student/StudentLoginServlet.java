@@ -25,7 +25,7 @@ public class StudentLoginServlet extends HttpServlet{
 	}
 
 	@Override
-		protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// from 태그를 사용하고 method에 post를 적어서 요청을 하면 POST방식 요청임.
 		// 현재 post방식은 form 태그로만 가능
 		String studentId, studentPw;
